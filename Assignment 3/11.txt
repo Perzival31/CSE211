@@ -1,0 +1,9 @@
+	public static void symmetricSetDifference(Set<Integer> set1, Set<Integer> set2) {
+		Set<Integer> set3 = new TreeSet<Integer>(set1);
+			set3.removeAll(set2);
+			set2.removeAll(set1);
+			set3.addAll(set2);
+			System.out.println(set3);
+		
+		
+	}

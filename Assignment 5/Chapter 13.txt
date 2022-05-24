@@ -1,0 +1,19 @@
+4) The algoritm belongs to a linear complexity class because the time it takes to run is proportianal to the length of the input because the for loop runs for the length of the array.
+
+9)a {63, 9, 45, 72, 27, 18, 54, 36}
+   Left {63, 9, 45, 72} Right {27, 18, 54, 36}
+   Left Left {63, 9} Left Right {45, 72} Right Left {27, 18} Right Right {54, 36}
+   {63}		 	{45}			{27}			{54}
+   {9} 			{72}			{18}			{36}
+   {9, 63}		{45, 72}		{18, 27}		{36, 54}
+	{9, 45, 63, 72}					{18, 27, 36, 54}
+			{9, 18, 27, 36, 45, 54, 63, 72}
+
+9)b {37, 29, 19, 48, 23, 55, 74, 12}
+   Left {37, 29, 19, 48} Right {23, 55, 74, 12}
+   Left Left {37, 29} Left Right {19, 48} Right Left {23, 55} Right Right {74, 12}
+   {37}		 	{19}			{23}			{74}
+   {29}			{48}			{55}			{12}
+   {29, 37}		{19, 48}		{23, 55}		{12, 74}
+	{19, 29, 37, 48}					{12, 23, 55, 74}
+			{12, 19, 23, 29, 37, 48, 55, 74}

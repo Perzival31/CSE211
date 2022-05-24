@@ -1,0 +1,13 @@
+	public static boolean is1to1(Map<String, String> map) {
+		
+		Set<String>set=new HashSet<String>();
+		
+		for (String name:map.keySet()) {
+			String value = map.get (name);
+			set.add(value);
+		}
+		
+		return map.size()==set.size();
+		
+	
+	}
